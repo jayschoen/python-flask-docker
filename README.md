@@ -11,13 +11,7 @@ currently, the html loads and a square is rendered on screen that changes to a r
 
 also included a basic dockerfile:
 
-build the image and uses 'python-flask-docker' as the image name:
-
-`docker build --tag python-flask-docker .`
-
-run the image in detatched mode (-d) using a specific port (-p) ... 4000 is the external port, 5000 is the internal port:
-
-`docker run -d -p 4000:5000 python-flask-docker` 
+`docker compose up --build` -- builds and runs the image
 
 then the app can be accessed by going to `127.0.0.1:4000/test`
 
