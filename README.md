@@ -15,6 +15,20 @@ index (`/`) ... just a "hello flask" message
 
 --
 
+to run the standalone python app:
+
+in the app directory, create a virtual env `python3 -m venv venv`
+
+then `source venv/bin/activate`
+
+then `pip install -r requirements.txt`
+
+finally `python3 app.py`
+
+flask should start and provide a url
+
+--
+
 also included a basic dockerfile:
 
 `docker compose up --build` -- builds and runs the image
