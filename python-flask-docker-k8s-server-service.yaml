@@ -3,8 +3,8 @@ kind: Service
 metadata:
   creationTimestamp: "2024-04-04T20:04:49Z"
   labels:
-    app: python-flask-docker-server
-  name: python-flask-docker-server
+    app: python-flask-docker-k8s
+  name: python-flask-docker-k8s
   namespace: default
   resourceVersion: "5446"
   uid: f7caf0d4-a2d1-42f2-890b-fc4803f37e4f
@@ -23,7 +23,7 @@ spec:
     protocol: TCP
     targetPort: 5000
   selector:
-    app: python-flask-docker-server
+    app: python-flask-docker-k8s
   sessionAffinity: None
   type: NodePort
 status:
