@@ -8,7 +8,9 @@ javascript lives in /static
 the app has 3 endpoints:
 
 index (`/`) ... just a "hello flask" message
+
 `/meh` ... just another endpoint
+
 `/test` ... renders a box on the screen which changes colors ever 500ms
 
 --
