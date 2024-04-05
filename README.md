@@ -5,7 +5,11 @@ very simple python app that starts flask to serve an html file with some javascr
 html lives in /templates
 javascript lives in /static
 
-currently, the html loads and a square is rendered on screen that changes to a random color ever 500ms
+the app has 3 endpoints:
+
+index (`/`) ... just a "hello flask" message
+`/meh` ... just another endpoint
+`/test` ... renders a box on the screen which changes colors ever 500ms
 
 --
 
