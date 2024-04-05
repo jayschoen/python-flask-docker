@@ -6,8 +6,8 @@ metadata:
   creationTimestamp: "2024-04-04T20:02:10Z"
   generation: 2
   labels:
-    app: python-flask-docker-server
-  name: python-flask-docker-server
+    app: python-flask-docker-k8s
+  name: python-flask-docker-k8s
   namespace: default
   resourceVersion: "4046"
   uid: 8e7bd3d3-13fc-440f-9faa-b3781a275720
@@ -17,7 +17,7 @@ spec:
   revisionHistoryLimit: 10
   selector:
     matchLabels:
-      app: python-flask-docker-server
+      app: python-flask-docker-k8s
   strategy:
     rollingUpdate:
       maxSurge: 25%
@@ -27,12 +27,12 @@ spec:
     metadata:
       creationTimestamp: null
       labels:
-        app: python-flask-docker-server
+        app: python-flask-docker-k8s
     spec:
       containers:
-      - image: python-flask-docker-server
+      - image: python-flask-docker-k8s
         imagePullPolicy: Never
-        name: python-flask-docker-server
+        name: python-flask-docker-k8s
         resources: {}
         terminationMessagePath: /dev/termination-log
         terminationMessagePolicy: File
