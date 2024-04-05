@@ -31,5 +31,5 @@ after downloading (if necessary) - `minikube start`
 `kubectl apply -f python-flask-docker-server-deployment.yaml`
 `kubectl apply -f python-flask-docker-server-service.yaml`
 
-
+`kubectl port-forward service/python-flask-docker-k8s 5000:` <-- nothing after the colon is on purpose
 
