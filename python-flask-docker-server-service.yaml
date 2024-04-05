@@ -1,0 +1,30 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2024-04-04T20:04:49Z"
+  labels:
+    app: python-flask-docker-server
+  name: python-flask-docker-server
+  namespace: default
+  resourceVersion: "5446"
+  uid: f7caf0d4-a2d1-42f2-890b-fc4803f37e4f
+spec:
+  clusterIP: 10.100.78.197
+  clusterIPs:
+  - 10.100.78.197
+  externalTrafficPolicy: Cluster
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - nodePort: 30383
+    port: 5000
+    protocol: TCP
+    targetPort: 5000
+  selector:
+    app: python-flask-docker-server
+  sessionAffinity: None
+  type: NodePort
+status:
+  loadBalancer: {}
