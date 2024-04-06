@@ -48,9 +48,9 @@ after downloading (if necessary) - `minikube start`
 `eval $(minikube docker-env)` ... then `cd` into the app directory
 `docker build -t python-flask-docker-k8s .`
 
-`kubectl apply -f python-flask-docker-server-deployment.yaml`
+`kubectl apply -f python-flask-docker-k8s-server-deployment.yaml`
 
-`kubectl apply -f python-flask-docker-server-service.yaml`
+`kubectl apply -f python-flask-docker-k8s-server-service.yaml`
 
 `kubectl port-forward service/python-flask-docker-k8s 5000:` <-- nothing after the colon is on purpose
 
