@@ -33,9 +33,9 @@ also included a basic dockerfile:
 
 `docker compose up --build` -- builds and runs the image
 
-then the app can be accessed by going to `127.0.0.1:4000/test`
+then the app can be accessed by going to `127.0.0.1:4000`
 
-the app current has 2 other endpoints defined, but the color changing box appears at /test
+see the top of the readme for the existing endpoints
 
 --
 
@@ -52,5 +52,12 @@ after downloading (if necessary) - `minikube start`
 
 `kubectl apply -f python-flask-docker-k8s-server-service.yaml`
 
+then, to access the app...
+
+`minikube service python-flask-docker-k8s --url` and paste the provided url into your browser
+
+OR
+
 `kubectl port-forward service/python-flask-docker-k8s 5000:` <-- nothing after the colon is on purpose
 
+see the top of the readme for the existing endpoints
